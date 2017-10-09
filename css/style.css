@@ -88,19 +88,15 @@
 }
 
 .line-divisor{
-	width: 100%;
 	clear: both;
-	margin-bottom: 49px;
 }
 
 .heart{
-    width: 80px;
+    width: 100%;
 }
 
 .heart2{
-	margin-top: -40px;
-    float: left;
-    width: 80px;
+    width: 100%;
 }
 
 .footer{
@@ -184,9 +180,12 @@
 	.box{
 		margin-left: 36px;
 	}
+	.column-right img{
+		width: 450px;
+	}
 }
 
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
 	.header{
 	    background-image: url('../images/header_mobile_480px.jpg');
 	    height: 590px;
@@ -207,9 +206,9 @@
 	.wrapper{
 	    width: 550px;
 	}
-	
-	.heart{
-	    width: 580px;
+
+	.column-right img{
+		width: 535px;
 	}
 }
 
@@ -231,11 +230,8 @@
 	    width: 470px;
 	}
 
-	img{
+	.colun-right img{
 		max-width: 445px;
 	}
-	
-	.line-divisor{
-		margin-top: 80px;
-	}
+
 }
