@@ -233,4 +233,8 @@
 	img{
 		max-width: 445px;
 	}
+	
+	.line-divisor{
+		margin-top: 40px;
+	}
 }
