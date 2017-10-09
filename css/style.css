@@ -94,8 +94,6 @@
 }
 
 .heart{
-	margin-top: -40px;
-    float: right;
     width: 80px;
 }
 
@@ -210,6 +208,9 @@
 	    width: 550px;
 	}
 	
+	.heart{
+	    width: 580px;
+	}
 }
 
 @media (max-width: 479px){
