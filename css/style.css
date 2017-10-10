@@ -1,21 +1,18 @@
 .wrapper{
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-	width: 1170px
+	width: 100%
 }
 
 .header{
 	height: 720px;
 	background-image: url('../images/header2.jpg');
-	background-size: auto;
+	background-size: cover;
 	background-position: 50% 0px;
 	background-repeat: no-repeat;
 	margin-bottom: 50px;
 }
 
 .content{
+	width: 960px;
 	min-height: 100px;
 	display: flow-root;
 	margin: 20px auto 40px;
@@ -26,7 +23,7 @@
 .content h2{
 	font-family:  'Asap', sans-serif;
 	font-size: 28pt;
-	line-height: 32px;
+	line-height: 40px;
 	color: #CF6F85;
 	text-align: left;
 	letter-spacing: 1px;	
@@ -36,10 +33,11 @@
 .content h3{
 	font-family:  'Asap', sans-serif;
 	font-size: 20pt;
-	line-height: 24px;
+	line-height: 32px;
 	color: #CF6F85;
 	text-align: left;
 	letter-spacing: 1px;
+	margin-bottom: 20px;
 }
 
 .content a{
@@ -47,13 +45,15 @@
 }
 
 .column-left{
-	width: 50%;
+	width: 45%;
 	float: left;
+	padding: 0 10px 0 0;
 }
 
 .column-right{	
-    width: 47%;
+    width: 45%;
 	float: right;
+	padding: 0 0 0 10px
 }
 
 .column-left p, .column-right p{
@@ -63,7 +63,6 @@
 	color: #7b7b7b;
 	text-align: left;
 	letter-spacing: 1px;	
-    margin-top: 30px;
 }
 
 .column-left a, .column-right a{
@@ -87,25 +86,29 @@
 	margin: 35px 0 0;
 }
 
+.logofemama{
+	width: 365px;
+	margin: 40px auto;
+}
+
 .line-divisor{
 	clear: both;
+	width: 100%;
 }
 
 .heart{
     width: 100%;
 }
 
-.heart2{
-    width: 100%;
-}
-
 .footer{
-	max-width: 1920px;
+	width: 100%;
 	min-height: 550px;
 	background-image: url('../images/bg_rosa.png');
+	background-size: cover;
 	background-position: 50% 0px;
 	position: relative;
-	padding: 40px 0 10px;
+	padding: 50px 0 10px;
+	margin-top: -80px;
 }
 
 .box{
@@ -114,7 +117,7 @@
 	background-color: #fff;
 	margin-top: 10px; 
 	float: left;
-	margin-left: 88px;
+	margin-left: 50px;
 }
 
 .box:last-child{
@@ -171,67 +174,71 @@
 
 @media (max-width: 991px){
 	.header{
-		background-image: url('../images/header_mobile_960px.jpg');
-		height: 1140px;
+		height: 1136px;
+		background-image: url('../images/header_mobile_960px	.jpg');
+		margin-bottom: 30px;
 	}
-	.wrapper{
-	    width: 970px;
+	.content{
+		width: 760px;
 	}
 	.box{
-		margin-left: 36px;
-	}
-	.column-right img{
-		width: 450px;
+		margin-left: 80px;
 	}
 }
 
 @media (max-width: 767px){
-	.header{
-	    background-image: url('../images/header_mobile_480px.jpg');
-	    height: 590px;
+	.content{
+		width: 520px;
+	}
+	.box{
+		width: 200px;
+		height: 300px;
+		margin-left: 30px;
 	}
 
-	.content{
-		width: 475px;
+	.box:last-child{
+		margin-right: 0;
+	}
+
+	.box img.tag{
+		position: relative;
+		left: 142px;
+		top: 6px;
+	}
+
+	.box img.product{
+		width: 180px;
+		margin: 70px 10px 20px; 
 	}
 	.column-left{
 		width: 100%;
-		float: left;
-    	margin-bottom: 13px;
+    	margin-bottom: 15px;
 	}
 
 	.column-right{
 		width: 100%;
-	}
-	.wrapper{
-	    width: 550px;
+		margin-bottom: 15px;
 	}
 
-	.column-right img{
-		width: 475px;
-	}
 }
 
 @media (max-width: 479px){
+	.header{
+		height: 568px;
+		background-image: url('../images/header_mobile_480px.jpg');
+		margin-bottom: 30px;
+	}
 	.content{
 		width: 450px;
 	}
 	.column-left{
 		width: 100%;
-		float: left;
-    	margin-bottom: 13px;
+    	margin-bottom: 10px;
 	}
 
 	.column-right{
 		width: 100%;
-	}
-	
-	.wrapper{
-	    width: 470px;
-	}
-
-	.column-right img{
-		max-width: 445px;
+		margin-bottom: 10px;
 	}
 
 }
