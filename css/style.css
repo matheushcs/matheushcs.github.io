@@ -232,6 +232,9 @@
 		margin-bottom: 15px;
 	}
 
+	.obs{
+		clear: both;
+	}
 }
 
 @media (max-width: 479px){
