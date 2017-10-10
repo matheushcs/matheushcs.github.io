@@ -65,7 +65,13 @@
 	letter-spacing: 1px;	
 }
 
-.column-left a, .column-right a{
+.link{
+	width: 100%;
+	float: left;
+	overflow: auto;
+}
+
+.link a{
 	font-family:  'Asap', sans-serif;
 	font-size: 20px;
 	line-height: 26px;
@@ -190,6 +196,12 @@
 	.content{
 		width: 520px;
 	}
+
+	.logofemama{
+		width: 280px;
+		margin: 20px auto;
+	}
+
 	.box{
 		width: 200px;
 		height: 300px;
@@ -232,13 +244,18 @@
 		width: 450px;
 	}
 	.column-left{
-		width: 100%;
     	margin-bottom: 10px;
 	}
 
 	.column-right{
-		width: 100%;
 		margin-bottom: 10px;
 	}
 
+}
+
+@media (max-width: 320px){
+	.content{
+		width: 300px;
+	}
+	
 }
