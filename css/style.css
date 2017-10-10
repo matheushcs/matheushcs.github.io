@@ -65,12 +65,6 @@
 	letter-spacing: 1px;	
 }
 
-.link{
-	width: 100%;
-	float: left;
-	overflow: auto;
-}
-
 .link a{
 	font-family:  'Asap', sans-serif;
 	font-size: 20px;
@@ -196,7 +190,13 @@
 	.content{
 		width: 520px;
 	}
-
+	
+	.link{
+		width: 100%;
+		float: left;
+		overflow: auto;
+	}
+	
 	.logofemama{
 		width: 280px;
 		margin: 20px auto;
